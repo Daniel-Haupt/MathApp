@@ -5,33 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDC0A4"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/titleImageMathematics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="250dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/titlemath" />
 
     <EditText
         android:id="@+id/firstValue"
-        android:layout_width="186dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="10dp"
         android:ems="10"
         android:hint="First Number"
         android:inputType="text"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/secondValue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,27 +21,17 @@
         android:id="@+id/secondValue"
         android:layout_width="186dp"
         android:layout_height="59dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="15dp"
         android:ems="10"
         android:hint="Second Number"
         android:inputType="text"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/firstValue"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/calculation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="115dp"
-        android:text="Calculate"
-        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/totalValue" />
@@ -73,21 +45,6 @@
         android:inputType="text"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
-
-    <ImageView
-        android:id="@+id/squiggleWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/mathssquiggle" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
